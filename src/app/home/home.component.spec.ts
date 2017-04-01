@@ -42,8 +42,8 @@ describe('Home', () => {
     expect(!!home.title).toEqual(true);
   }));
 
-  it('should be version 2017-01-07', inject([ HomeComponent ], (home: HomeComponent) => {
-    expect(home.version).toEqual('2017-01-07');
+  it('should be version 2017-04-01', inject([ HomeComponent ], (home: HomeComponent) => {
+    expect(home.version).toEqual('2017-04-01');
   }));
 
   it('should log ngOnInit', inject([ HomeComponent ], (home: HomeComponent) => {

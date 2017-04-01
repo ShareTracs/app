@@ -12,7 +12,7 @@ const ProvidePlugin = require('webpack/lib/ProvidePlugin');
 const DefinePlugin = require('webpack/lib/DefinePlugin');
 const LoaderOptionsPlugin = require('webpack/lib/LoaderOptionsPlugin');
 const ContextReplacementPlugin = require('webpack/lib/ContextReplacementPlugin');
-const VERSION = process.env.VERSION || '2017-01-07';
+const VERSION = process.env.VERSION || '2017-04-01';
 
 /**
  * Webpack Constants
