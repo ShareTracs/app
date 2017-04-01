@@ -10,7 +10,7 @@
 ```bash
 # clone our repo
 # change directory to our repo
-cd kalango
+cd ShareTracs
 
 # install webpack dev server
 npm install webpack -g

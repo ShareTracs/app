@@ -21,7 +21,7 @@ import { FlexDirective } from './directive/flex.directive.ts';
 import { LayoutDirective } from './directive/layout.directive.ts';
 
 /*
- * Kalango services
+ * ShareTracs services
  */
 import { LoginService } from './login/login.service';
 import { MaterialModule } from '@angular/material';

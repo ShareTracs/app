@@ -9,7 +9,7 @@ describe('App', () => {
 
   it('should have a title', () => {
     let subject = browser.getTitle();
-    let result  = 'Kalango';
+    let result  = 'ShareTracs';
     expect(subject).toEqual(result);
   });
 
