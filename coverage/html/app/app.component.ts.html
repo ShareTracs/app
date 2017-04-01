@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for app/app.component.ts</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">app/</a> app.component.ts
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">65.91% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>29/44</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">74.07% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>20/27</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">33.33% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>4/12</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">65% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>26/40</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Component, NgZone, ViewEncapsulation, ViewContainerRef } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { AppState } from './app.service';
+import { LoginService } from './login/login.service';
+import { DialogService } from './dialog/dialog.service';
+&nbsp;
+// Google's login API namespace
+declare var gapi: any;
+&nbsp;
+/*
+ * App Component
+ * Top Level Component
+ */
+@Component({
+  selector: 'app',
+  encapsulation: ViewEncapsulation.None,
+  styleUrls: [
+    './app.component.css',
+    './theme.scss'
+  ],
+  templateUrl: './app.component.html'
+})
+export class AppComponent {
+&nbsp;
+  localState: any;
+  isDarkTheme: boolean = false;
+  result: any;
+&nbsp;
+  loggedIn = this.loginService.isLoggedIn();
+  userImage = '../../assets/img/user-blank-avatar.png';
+  userFullName = "";
+  userEmail = "";
+&nbsp;
+  constructor(
+    public zone: NgZone,
+    public appState: AppState<span class="branch-2 cbranch-no" title="branch not covered" >,</span>
+    public route: ActivatedRoute<span class="branch-2 cbranch-no" title="branch not covered" >,</span>
+    public loginService: LoginService<span class="branch-2 cbranch-no" title="branch not covered" >,</span>
+    public dialogService: DialogService<span class="branch-2 cbranch-no" title="branch not covered" >,</span>
+    public viewContainerRef: ViewContainerRef<span class="branch-2 cbranch-no" title="branch not covered" ></span>
+) {}
+&nbsp;
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >  public openWarning() {</span></span>
+<span class="cstat-no" title="statement not covered" >    this.dialogService</span>
+      .alert('flight', 'You have travel alerts!', this.viewContainerRef)
+      .subscribe(res<span class="fstat-no" title="function not covered" > =&gt; <span class="cstat-no" title="statement not covered" >this.result = res)</span></span>;
+  }
+&nbsp;
+  setLoggedIn(loggedIn<span class="fstat-no" title="function not covered" >) {</span>
+<span class="cstat-no" title="statement not covered" >    this.loggedIn = loggedIn;</span>
+<span class="cstat-no" title="statement not covered" >    if (this.loggedIn) {</span>
+      let jwt = <span class="cstat-no" title="statement not covered" >this.loginService.getJwt();</span>
+<span class="cstat-no" title="statement not covered" >      this.userImage = jwt.picture;</span>
+<span class="cstat-no" title="statement not covered" >      this.userFullName = jwt.name;</span>
+<span class="cstat-no" title="statement not covered" >      this.userEmail = jwt.email;</span>
+    }
+    // force refresh view
+<span class="cstat-no" title="statement not covered" >    this.zone.run(<span class="fstat-no" title="function not covered" >() =&gt; {})</span>;</span>
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  logout() {</span>
+<span class="cstat-no" title="statement not covered" >    this.loginService.logout();</span>
+  }
+&nbsp;
+  ngOnInit() {
+    console.log('Spy: Hello from `App`');
+    this.route
+      .data
+      .subscribe((data: any) =&gt; {
+        // your resolved data from route
+        this.localState = data.yourData;
+    });
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  ngAfterViewInit() {</span>
+<span class="cstat-no" title="statement not covered" >    gapi.targetApp = this;</span>
+<span class="cstat-no" title="statement not covered" >    gapi.signin2.render(</span>
+      "g-signin2",
+      {
+        "onSuccess": function(googleUser<span class="fstat-no" title="function not covered" >){</span>
+<span class="cstat-no" title="statement not covered" >          gapi.targetApp.loginService.loginWithGoogle(googleUser);</span>
+        },
+        "scope": "profile email",
+        "theme": "dark",
+        "onfailure": function(err<span class="fstat-no" title="function not covered" >){<span class="cstat-no" title="statement not covered" >console.log(err);}</span></span>
+      }
+    );
+  }
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sat Apr 01 2017 00:11:13 GMT-0700 (PDT)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

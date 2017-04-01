@@ -1,0 +1,52 @@
+<md-sidenav-container class="main" fullscreen>
+  <md-sidenav #start mode="over" class="sidenav">
+    <md-toolbar color="primary">
+      <button md-icon-button (click)="start.toggle()">
+        <md-icon>close</md-icon>
+      </button>
+      <span class="title"> </span>
+    </md-toolbar>
+    <button md-menu-item [routerLink]="['./home']" (click)="start.toggle()"> <md-icon>home</md-icon> Home </button>
+  </md-sidenav>
+  <md-toolbar color="primary">
+    <table align="center" style="margin:0;">
+      <tr>
+        <td align="center">
+          <span class="left">
+            <button md-icon-button (click)="start.toggle()">
+              <md-icon>menu</md-icon>
+            </button>
+          </span>
+          <span class="center">
+            <button md-button [routerLink]="['./home']" *ngIf="loggedIn">
+                Home
+            </button>
+          </span>
+          <span class="right">
+            <div id="g-signin2" data-onsuccess="onSignIn"></div>
+            <button md-icon-button [md-menu-trigger-for]="menu2" [disabled]="!loggedIn">
+              <img class="user-image-thumb" src="{{userImage}}"/>
+            </button>
+            <md-menu #menu2="mdMenu">
+              <div class="account-menu-header">
+                <div><img class="user-image-full" src="{{userImage}}"/></div>
+                <div>
+                  <span>{{ userFullName }}</span>
+                  <span>{{ userEmail }}</span>
+                </div>
+              </div>
+              <div class="account-menu-buttons">
+                <button md-raised-button color="accent" [routerLink]="['./account']"> My Account </button>
+                <button md-raised-button [routerLink]="['./home']" (click)="logout()"> Log out </button>
+              </div>
+            </md-menu>
+          </span>
+        </td>
+      <tr>
+    </table>
+  </md-toolbar>
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+  <footer></footer>
+</md-sidenav-container>

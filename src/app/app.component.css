@@ -1,0 +1,67 @@
+html, body{
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+span.active {
+  background-color: gray;
+}
+
+.main md-card{
+  width: 300px;
+}
+.main .wide-card {
+  width: 600px;
+  overflow: scroll;
+}
+
+.main .sidenav {
+  min-width:250px;
+}
+
+md-sidenav-layout.main {  }
+md-sidenav-layout.main span.left { padding: 0 0 0 0; }
+md-sidenav-layout.main span.center { padding: 0 0 0 0; }
+md-sidenav-layout.main span.right { padding:5px 5px 0 5px; }
+
+div.account-menu-header {
+  margin: 10px 0 10px 20px;
+}
+
+div.account-menu-buttons {
+  padding: 10px 0 10px 0;
+  text-align: center;
+}
+
+div.account-menu-buttons button {
+  margin: 0 10px 0 0;
+}
+
+img.user-image-thumb {
+  width: 32px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+
+img.user-image-full {
+  width: 96px;
+  border: 1px solid #f9f9f9;
+  margin: 0 0 10px 0;
+}
+
+div#g-signin2 {
+  float: right;
+  margin: 2px 0 0 5px;
+}
+
+.md-dialog-container {
+  padding: 0 0 0 0;
+  min-width: 400px;
+}
+
+.angular-google-map { }
+.map-infowindow-container { padding:5px; }
+.map-infowindow-container .name { font-weight:bold; padding:0 0 0 0; }
+.map-infowindow-container .info { padding:5px 0 0 0; }
+
+.row-content { width:100%; padding:20px; }

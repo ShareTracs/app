@@ -1,0 +1,14 @@
+@import '~@angular/material/core/theming/all-theme';
+
+// NOTE: Theming is currently experimental and not yet publically released!
+
+@include mat-core();
+
+// Here the existing theme is being redfined
+// md-palette takes color(map), default, lighter, darker
+$dark-primary: mat-palette($mat-indigo, 500, 100, 200);
+$dark-accent: mat-palette($mat-blue, A200, A100, A300);
+$dark-warn: mat-palette($mat-amber, A200, A100, A400);
+$dark-theme: mat-light-theme($dark-primary, $dark-accent, $dark-warn);
+
+@include angular-material-theme($dark-theme);
