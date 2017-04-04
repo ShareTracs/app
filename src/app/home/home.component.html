@@ -8,5 +8,19 @@
         <iframe src="http://www.youtube.com/embed/W7qWa52k-nE"
          width="560" height="315" align = "center" frameborder="0" allowfullscreen></iframe>
       </div>
-  </div>
+      <div><p>Choose Number:</p>
+        	<li><a href="#">Number 1</a></li>
+        	<li><a href="#">Number 2</a></li>
+      </div>
+      <div>
+        <p>
+          <select [(ngModel)]="selectedItem" #state (ngModelChange)="selectState(state.value);">
+            <option [ngValue]="state" *ngFor="let state of states">{{state}}</option>
+          </select>
+      </p>
+      </div>
+      <div>
+        <button name="button" (click)="helloWorld('Garett');">Click me</button>
+      </div>
+    </div>
 </div>

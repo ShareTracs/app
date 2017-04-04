@@ -29,10 +29,15 @@ export class HomeComponent {
   constructor(public appState: AppState, public title: Title) {
     console.log(process.env.VERSION);
     this.version = process.env.VERSION;
+
+    this.states = ["Alabama", "Alaska", "Arizona", "California"];
+
+
   }
   ngOnInit() {
     console.log('Spy: Hello from `Home`');
     // this.title.getData().subscribe(data => this.data = data);
+
   }
 
 
@@ -41,4 +46,17 @@ export class HomeComponent {
     this.appState.set('value', value);
     this.localState.value = '';
   }
+
+
+  helloWorld(msg) {
+    console.log("Hello World " + msg);
+  }
+
+
+    selectState(state) {
+
+        console.log(state);
+
+    }
+
 }
